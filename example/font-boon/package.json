@@ -1,0 +1,6 @@
+{
+	"name": "font-boon",
+	"version": "1.0.0",
+	"author": "Izaak Schroeder <izaak.schroeder@gmail.com>",
+	"main": "./boon.font.json"
+}

@@ -1,0 +1,7 @@
+
+@import "./font-boon?weight=300,500&style=normal,oblique";
+
+body {
+	font-family: "Boon";
+	font-weight: 100;
+}

@@ -1,0 +1,27 @@
+{
+	"name": "Boon",
+	"author": "Sungsit Sawaiwan",
+	"license": "GPL",
+	"files": [{
+		"weight": 300,
+		"file": "./boon-300.otf"
+	}, {
+		"weight": 400,
+		"file": "./boon-400.otf"
+	}, {
+		"weight": 700,
+		"file": "./boon-700.otf"
+	}, {
+		"weight": 300,
+		"style": "oblique",
+		"file": "./boon-300-oblique.otf"
+	}, {
+		"weight": 400,
+		"style": "oblique",
+		"file": "./boon-400-oblique.otf"
+	}, {
+		"weight": 700,
+		"style": "oblique",
+		"file": "./boon-700-oblique.otf"
+	}]
+}

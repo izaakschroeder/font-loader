@@ -1,0 +1,10 @@
+@font-face {
+	 font-family: "<%= name %>";
+	 font-weight: normal;
+	 font-style: normal;
+	 src: url("/<%= eot %>");
+	 src: url("/<%= eot %>") format("embedded-opentype"),
+	 	url("/<%= woff %>") format("woff"),
+	 	url("/<%= ttf %>")  format("truetype"),
+	 	url("/<%= svg %>#<%= name %>") format("svg");
+}

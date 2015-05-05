@@ -1,0 +1,12 @@
+{
+	"name": "font-loader-example",
+	"version": "0.1.0",
+	"dependencies": {
+
+	},
+	"devDependencies": {
+		"webpack": "*",
+		"extract-text-webpack-plugin": "*",
+		"font-loader": "../"
+	}
+}
