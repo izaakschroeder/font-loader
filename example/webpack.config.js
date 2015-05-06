@@ -6,28 +6,31 @@ var path = require('path'),
 // Export the webpack configuration
 module.exports = {
 	entry: {
-		// 'test.css': './test.css',
-		'test.js': './test.js'
+		'test.css': './test.css'
+		// 'test.js': './test.js'
 	},
 
 	// Output controls the settings for file generation.
 	output: {
-		filename: '[name].[hash].[ext]',
+		filename: '[name].[hash].js',
 		path: path.join(__dirname, 'build'),
-		chunkFilename: '[id].[hash].[ext]'
+		chunkFilename: '[id].[hash].js'
 	},
 
 	// Module settings.
 	module: {
 		loaders: [{
 			test: /\.font\.json$/,
-			loader: 'font?format=ttf,woff,eot'
+			loader: 'font-loader?format[]=truetype&format[]=woff&format[]=embedded-opentype'
 		}, {
-			test: /\.scss$/,
+			test: /\.css$/,
 			loaders: [
-				'raw',
-				'css',
-				'sass?precision=10&outputStyle=expanded&sourceMap=true'
+				ExtractTextPlugin.loader({
+					extract: true,
+					omit: 1
+				}),
+				'style',
+				'css'
 			]
 		}]
 	},

@@ -1,5 +1,5 @@
 
-@import "./font-boon?weight=300,500&style=normal,oblique";
+@import url("~font-loader?format[]=truetype&format[]=woff&format[]=embedded-opentype!./font-boon");
 
 body {
 	font-family: "Boon";

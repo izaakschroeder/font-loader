@@ -7,6 +7,6 @@
 	"devDependencies": {
 		"webpack": "*",
 		"extract-text-webpack-plugin": "*",
-		"font-loader": "../"
+		"font-loader": "*"
 	}
 }

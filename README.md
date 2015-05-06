@@ -11,7 +11,7 @@ Add `font-loader` to the list of your webpack loaders.
 	modules: {
 		loaders: [{
 			test: /\.font\.json$/,
-			loader: 'font?formats=ttf,woff,eot'
+			loader: 'font-loader?format[]=truetype&format[]=woff'
 		}]
 	}
 }
