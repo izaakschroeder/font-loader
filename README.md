@@ -19,7 +19,7 @@ Add `font-loader` to the list of your webpack loaders.
 
 Create a font manifest file which describes the variants in the font and includes paths to their TTF/OTF/WOFF/etc. files. Variant metadata matches what is found in CSS (e.g. `weight` and `style`).
 
-```json5
+```json
 {
 	"name": "Proxima Nova",
 	"files": [{
@@ -57,13 +57,13 @@ Create a `package.json` that points to your new font.
 Use your font in CSS.
 
 ```css
-@import "font-myfont";
+@import "~font-myfont";
 ```
 
 Control which variants are included.
 
 ```css
-@import "font-myfont?weight=100,500,900&format=woff";
+@import "~font-myfont?weight=100,500,900&format=woff";
 ```
 
 Use your font in JavaScript.
@@ -76,3 +76,7 @@ console.log(myfont); // { name: "Proxima Nova", files: [...] }
 ## Configuration
 
 Some stuff.
+
+Thoughts: 
+ * Investigate if it's better to emit a single CSS file containing the font, and then have the loader resolve that as an "import" directive?
+ * How to get the loader to trigger without having to prefix all the import declarations with `font-loader!some-font` and instead use the configuration from `webpack.config.js`?
