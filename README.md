@@ -77,6 +77,7 @@ console.log(myfont); // { name: "Proxima Nova", files: [...] }
 
 Some stuff.
 
-Thoughts: 
+Thoughts:
  * Investigate if it's better to emit a single CSS file containing the font, and then have the loader resolve that as an "import" directive?
  * How to get the loader to trigger without having to prefix all the import declarations with `font-loader!some-font` and instead use the configuration from `webpack.config.js`?
+ * WOFF2 support
