@@ -73,6 +73,16 @@ var myfont = require('font-myfont');
 console.log(myfont); // { name: "Proxima Nova", files: [...] }
 ```
 
+## Example
+
+```bash
+npm link
+cd example
+npm install
+npm link font-loader
+webpack
+```
+
 ## Configuration
 
 Some stuff.
