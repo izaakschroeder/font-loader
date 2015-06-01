@@ -7,6 +7,7 @@
     "font-loader": "*",
     "style-loader": "*",
     "css-loader": "*",
+    "sass-loader": "*",
     "webpack": "*"
   }
 }
