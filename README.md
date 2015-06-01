@@ -4,14 +4,18 @@ Use your fonts in webpack-based projects!
 
 ## Usage
 
-Add `font-loader` to the list of your webpack loaders.
+Add `font-loader` to your list of CSS loaders.
 
 ```javascript
 {
 	modules: {
 		loaders: [{
-			test: /\.font\.json$/,
-			loader: 'font-loader?format[]=truetype&format[]=woff'
+			test: /\.css$/,
+			loaders: [
+				'style',
+				'css?importLoaders=1',
+				'font?format[]=truetype&format[]=woff&format[]=embedded-opentype'
+			]
 		}]
 	}
 }
@@ -63,7 +67,7 @@ Use your font in CSS.
 Control which variants are included.
 
 ```css
-@import "~font-myfont?weight=100,500,900&format=woff";
+@import "~font-myfont?weight[]=100&weight[]=500&format=woff";
 ```
 
 Use your font in JavaScript.
@@ -89,5 +93,5 @@ Some stuff.
 
 Thoughts:
  * Investigate if it's better to emit a single CSS file containing the font, and then have the loader resolve that as an "import" directive?
- * How to get the loader to trigger without having to prefix all the import declarations with `font-loader!some-font` and instead use the configuration from `webpack.config.js`?
+ * Fix assorted hackiness
  * WOFF2 support
