@@ -1,6 +1,7 @@
 
 var path = require('path'),
 	webpack = require('webpack'),
+	Clean = require('clean-webpack-plugin'),
 	ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 // Export the webpack configuration
@@ -47,6 +48,7 @@ module.exports = {
 	},
 
 	plugins: [
+		new Clean(['build']),
 		new ExtractTextPlugin('[name].[hash].css')
 	]
 };

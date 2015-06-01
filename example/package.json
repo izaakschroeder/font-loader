@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "dependencies": {},
   "devDependencies": {
+    "clean-webpack-plugin": "^0.1.3",
     "extract-text-webpack-plugin": "^0.8.1",
     "font-loader": "*",
     "style-loader": "^0.12.3",
