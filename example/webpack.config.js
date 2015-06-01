@@ -21,9 +21,6 @@ module.exports = {
 	// Module settings.
 	module: {
 		loaders: [{
-			test: /\.font\.json$/,
-			loader: 'font-loader?format[]=truetype&format[]=woff&format[]=embedded-opentype'
-		}, {
 			test: /\.css$/,
 			loaders: [
 				ExtractTextPlugin.loader({
