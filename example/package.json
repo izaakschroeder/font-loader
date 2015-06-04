@@ -3,11 +3,12 @@
   "version": "0.1.0",
   "dependencies": {},
   "devDependencies": {
-    "extract-text-webpack-plugin": "*",
+    "extract-text-webpack-plugin": "^0.8.1",
     "font-loader": "*",
-    "style-loader": "*",
-    "css-loader": "*",
-    "sass-loader": "*",
-    "webpack": "*"
+    "style-loader": "^0.12.3",
+    "css-loader": "^0.14.4",
+    "sass-loader": "^1.0.2",
+    "node-sass": "^3.1.2",
+    "webpack": "^1.9.10"
   }
 }
