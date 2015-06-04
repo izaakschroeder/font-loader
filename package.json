@@ -1,6 +1,6 @@
 {
   "name": "font-loader",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Fonts with webpack.",
   "author": "Izaak Schroeder <izaak.schroeder@gmail.com>",
   "main": "lib/font-loader.js",
