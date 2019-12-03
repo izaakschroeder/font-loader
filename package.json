@@ -8,7 +8,7 @@
   "dependencies": {
     "bluebird": "^2.9.26",
     "loader-utils": "^0.2.7",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.15",
     "option-multiplexer": "^0.1.0",
     "svg2ttf": "^2.0.0",
     "ttf2eot": "^2.0.0",
